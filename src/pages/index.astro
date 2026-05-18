@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Cursor from '../components/Cursor.astro';
+import Navbar from '../components/Navbar.astro';
+import Section from '../components/Section.astro';
+import Preloader from '../components/Preloader.astro';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="CIPHER — Ultra Luxury Real Estate">
+	<Preloader />
+	<Cursor />
+	<Navbar />
+
+	<div id="webgl-container"></div>
+
+	<div id="scroll-content">
+		
+		<Section id="sec-hero" align="center">
+			<span class="eyebrow">Ultra Luxury Real Estate</span>
+			<h1>Where Architecture<br><em>Transcends</em></h1>
+			<p>Extraordinary properties for extraordinary lives. A visual journey through automotive-grade 3D precision.</p>
+			<div class="scroll-indicator">
+				<span>Scroll to Ignite</span>
+				<div class="scroll-line"></div>
+			</div>
+		</Section>
+
+		<Section id="sec-properties" align="right">
+			<span class="eyebrow">Curated Collection</span>
+			<h2>The World's Most<br><em>Coveted Residences</em></h2>
+			<p>Obsidian blocks interlock with crystalline glass volumes. Every angle is designed to reflect light, mimicking the dramatic unveil of a flagship hypercar.</p>
+			<a href="#" class="btn hoverable">Explore Portfolio</a>
+		</Section>
+
+		<Section id="sec-blueprint" align="left">
+			<span class="eyebrow">Blueprint to Reality</span>
+			<h2>From Concept<br><em>to Masterwork</em></h2>
+			<p>Watch as solid form dissolves into pure structural intent. The wireframe skeleton glows with architectural potential.</p>
+		</Section>
+
+		<Section id="sec-exploded" align="right">
+			<span class="eyebrow">Spatial Intelligence</span>
+			<h2>Architecture<br><em>Deconstructed</em></h2>
+			<p>Volumes detach and float. An exploded view reveals the intricate layout of multi-level living, layered parallax depth in true 3D space.</p>
+		</Section>
+
+		<Section id="sec-daynight" align="center">
+			<span class="eyebrow">Environmental Cinema</span>
+			<h2>Living in<br><em>Every Light</em></h2>
+			<p>As the ambient world fades to obsidian, interior volumes ignite. Warm volumetric glows emerge from within.</p>
+		</Section>
+
+		<Section id="sec-penthouse" align="left">
+			<span class="eyebrow">Signature Property</span>
+			<h2>The Apex<br><em>Penthouse</em></h2>
+			<p>Rising above the geometry. The pinnacle of the structure asserts its dominance against the void.</p>
+			<a href="#" class="btn hoverable">Private Inquiry</a>
+		</Section>
+		
+	</div>
+
+	<!-- Load the Three.js and GSAP logic -->
+	<script src="/main.js" is:inline></script>
+</Layout>

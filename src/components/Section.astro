@@ -1,0 +1,14 @@
+---
+interface Props {
+	id: string;
+	align: 'left' | 'right' | 'center';
+}
+
+const { id, align } = Astro.props;
+---
+
+<section class={`section ${align}`} id={id}>
+  <div class="content-block">
+    <slot />
+  </div>
+</section>
